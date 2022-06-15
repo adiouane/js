@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head> 
+    <title>Todo List</title>
+<body>
+    <input id="todo_title" type="search"/>
+<button onclick="buff()">Press me</button> 
+<!-- <div>div1</div>
+<div>div2</div>
+<div>div3</div> -->
+<script>
+    // let v1 = "Hello";
+    // let v2 = "World";
+    // let v3 = v1 + " " + v2;
+    let arrays = ["a", "b", "c"];
+    // arrays.push(6);
+    // arrays.pop();
+    arrays.forEach(function(todo_title) {
+        let element = document.createElement("div");
+        element.innerText = todo_title;
+        document.body.appendChild(element);
+    });
+    function buff(){
+        let textbox = document.getElementById("todo_title");
+        let todo_title = textbox.value;
+        arrays.push(todo_title);  
+    }
+    // test(v2.toLowerCase());
+    // console.log(arrays);
+    // console.log("Hello World".toUpperCase());
+    // element.innerText = v3;
+    // document.body.appendChild(element); 
+    // element = document.createElement("div");
+    // console.log(v3);
+</script>
+</body>
+</html>
